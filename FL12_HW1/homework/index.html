@@ -12,24 +12,23 @@
     <div id="main">
       <div id="container">
         <div id="content" role="main">
-          <!-- TODO: Content goes here -->
           <header>
-            <img src="logo.png" />
+            <img src="logo.png" alt="EPAM" />
             <h1>HTML Elements</h1>
             <hr>
-          </header>
-          <nav>
+            <nav>
             <a href="#">Home</a>
-            <a href="#">Headings</a>
-            <a href="#">Text formats</a>
-            <a href="#">Types of lists</a>
-            <a href="#">Table</a>
-            <a href="#">Blockquotes</a>
-            <a href="#">Registration</a>
+            <a href="#Headings">Headings</a>
+            <a href="#Formats">Text formats</a>
+            <a href="#Lists">Types of lists</a>
+            <a href="#Table">Table</a>
+            <a href="#Blockquotes">Blockquotes</a>
+            <a href="#Registration">Registration</a>
           </nav>
+          </header>
           <hr>
 
-          <section>
+          <div>
             <p>
               Lorem ipsum dolor sit amet, <a href="#">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque
               aliquam. <i>This is emphasized.</i> Donec faucibus. Nunc iaculis suscipit dui. 4 <sup>4</sup> = 256. Phosphoric acid
@@ -38,24 +37,24 @@
               eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc.
               Morbi imperdiet augue quis tellus. <b>I am strong.</b>
             </p>
-          </section>
+          </div>
 
-          <section>
+          <div>
             <p>
               Watch out for the abbreviations! <abbr title="Hyper Text Markup Language">HTML</abbr> and <abbr
-                title="Cascading Style Sheets">CSS</abbr> are our tools. <abbr title="JavaScript">JS</abbr> is a dynamically typed
+              title="Cascading Style Sheets">CSS</abbr> are our tools. <abbr title="JavaScript">JS</abbr> is a dynamically typed
               language. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue
               quis tellus. Praesent mattis, massa quis luctus fermentum. To copy a file type COPY <i>filename</i>. <del>The
-                meeting began at 7pm</del> <mark>Let’s make that 6pm.</mark> This <del>text</del> has been struck.
+              meeting began at 7pm</del> <mark>Let’s make that 6pm.</mark> This <del>text</del> has been struck.
             </p>
-          </section>
+          </div>
           <hr>
 
-          <section>
-            <p>
+          <section id="Headings">
+            <h4>
               h1 defines the most important heading. h6 defines the least important heading. Font-size for h1 is the same as
               font-size for h2, because we have to use only one h1 on the page, and it is commonly used inside header
-            </p>
+            </h4>
           </section>
           
           <section>
@@ -75,22 +74,20 @@
           </section>
           <hr>
           
+          <article id="Formats">
+            <header>
+              <h2>Text formats</h2>
+            </header>
+            <section>
+              <h3>Article</h3>
+            </section>
             <article>
-              <header>
-                <h2>Text formats</h2>
-              </header>
-              <section>
-                <h3>Article</h3>
-              </section>
-              <section>
-                <article>
-                  <h2>Article title</h2>
-                </article>
-                <article>
-                  <p>Article description</p>
-                </article>
-              </section>
+              <h2>Article title</h2>
             </article>
+            <article>
+              <h4>Article description</h4>
+            </article>
+          </article>
 
           <section>
             <h3>Preformatted Text</h3>
@@ -117,7 +114,7 @@ both      <b>spaces</b> and
             </pre>
           </section>
 
-          <section>
+          <section id="Lists">
               <h2>Unordered Wish List</h2>
               <ul>
                 <li>Iphone 11 pro max</li>
@@ -138,10 +135,10 @@ both      <b>spaces</b> and
                 <li>Pay the bills</li>
                 <li>Refuel the car</li>
                 <li>Finish homework
-                    <ul>
-                      <li type="A">Create HTML page according to the requirements</li>
-                      <li type="A">Upload to the GitHub repository</li>
-                  </ul>
+                    <ol type="A">
+                      <li>Create HTML page according to the requirements</li>
+                      <li>Upload to the GitHub repository</li>
+                  </ol>
                 </li>
 
                 <li>Enjoy your day</li>
@@ -160,7 +157,7 @@ both      <b>spaces</b> and
             </dl>
             </section>
 
-            <section>
+            <div>
               <label>Select for learning
                 <select name="select">
                   <option value="JS" selected>JS</option>
@@ -168,11 +165,11 @@ both      <b>spaces</b> and
                   <option value="CSS">CSS</option>
                 </select>
               </label>
-            </section>
+            </div>
             <hr>
             <hr>
             
-            <section>
+            <section id="Table">
               <h3>Table</h3>
                 <table>
                   <thead>
@@ -208,7 +205,7 @@ both      <b>spaces</b> and
                 </table>
             </section>
 
-            <section>
+            <section id="Blockquotes">
               <h3>Blockquotes</h3>
               <p>Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
               <blockquote>
@@ -220,16 +217,15 @@ both      <b>spaces</b> and
             </section>
             <hr>
 
-            <section>
+            <aside id="Registration">
               <form>
                 Username: <input type="text"><br>
                 Email: <input type="email"><br>
                 Password: <input type="password"><br>
-                <textarea rows="4" cols="23"></textarea><br>
-                <input type="submit" value="Submit">
-
+                <textarea name="text" rows="4" cols="23"></textarea><br>
+                <button name="button">Submit</button>
               </form>
-             </section>
+            </aside>
 
           <footer>
               &copy; Copyright Epam Systems
@@ -242,9 +238,3 @@ both      <b>spaces</b> and
 </body>
 
 </html>
-
-<!--
-todo : якоря
-
-
--->
