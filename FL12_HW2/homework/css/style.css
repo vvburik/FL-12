@@ -1,0 +1,32 @@
+/*
+
+write your code here
+
+*/
+.tm-nav-item:hover {
+    background-color: lightskyblue;
+    color: #fff;
+}
+
+.tm-banner {
+    background-image: linear-gradient(to right, lightskyblue, burlywood);
+}
+
+.tm-banner-inner{
+    background-color: white;
+}
+.tm-banner-text{
+    text-shadow: 5px 5px 2px #333;
+    animation-duration: 3s;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+    from{
+        margin-left: 200px;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
