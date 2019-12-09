@@ -15,7 +15,7 @@
     text-shadow: 5px 5px 2px #333;
     animation-duration: 3s;
     animation-name: slide;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
 }
 
 @keyframes slide {
