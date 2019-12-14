@@ -1,0 +1,21 @@
+body {
+  margin: 0; }
+
+header {
+  background-image: url("../img/m-h-day.jpg");
+  height: 850px;
+  border-bottom-right-radius: 400px; }
+
+.header-wrap {
+  display: flex;
+  flex-direction: column; }
+
+.section_text {
+  text-align: center;
+  font-family: "Hind", sans-serif;
+  font-size: 25pt; }
+
+.section_text:nth-last-child(-n + 3) {
+  color: lightblue; }
+
+/*# sourceMappingURL=style2.css.map */
