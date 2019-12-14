@@ -1,4 +1,9 @@
 // Write your styles here
+body{
+  margin: $Marg;
+}
+
+
 header {
   background-color: $Body_color;
   background-image: $Header_img;
@@ -32,12 +37,12 @@ header {
       font-size: 15px;
     }
   }
-
+//todo
   .header_heading {
     font-size: 60pt;
     font-weight: bold;
   }
-
+//todo
   .header_heading::before {
     font-size: 60pt;
     font-weight: bold;
@@ -69,13 +74,39 @@ header {
   }
 }
 
+  .section {
 
-.section_text {
-  text-align: center;
-  font-family: "Hind", sans-serif;
-  font-size: 25pt;
-}
+    p.section_text {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: "Hind", sans-serif;
+      font-size: 25pt;
+      width: max-content;
+      background: lightblue;
+      position: relative;
+      z-index: -1;
+    }
 
-.section_text:nth-last-child(-n + 3) {
-  color: lightblue;
-}
+    p.section_text::before {
+      position: absolute;
+      content: 'Welcome to\a0';
+      background: white;
+      z-index: 1;
+
+    }
+
+    p.section_text::after {
+      position: absolute;
+      content: '!';
+      background: white;
+      z-index: 1;
+      right: 0;
+    }
+
+  }
+
+
+
+
+

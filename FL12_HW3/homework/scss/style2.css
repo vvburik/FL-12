@@ -1,3 +1,6 @@
+body {
+  margin: 0; }
+
 header {
   background-color: #000000;
   background-image: url(../img/m-h-night.jpg);
@@ -47,12 +50,26 @@ header {
     padding-left: 150px;
     color: white; }
 
-.section_text {
-  text-align: center;
+.section p.section_text {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Hind", sans-serif;
-  font-size: 25pt; }
-
-.section_text:nth-last-child(-n + 3) {
-  color: lightblue; }
+  font-size: 25pt;
+  width: max-content;
+  background: lightblue;
+  position: relative;
+  z-index: -1; }
+.section p.section_text::before {
+  position: absolute;
+  content: 'Welcome to\a0';
+  background: white;
+  z-index: 1; }
+.section p.section_text::after {
+  position: absolute;
+  content: '!';
+  background: white;
+  z-index: 1;
+  right: 0; }
 
 /*# sourceMappingURL=style2.css.map */
