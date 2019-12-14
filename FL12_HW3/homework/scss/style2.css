@@ -1,14 +1,51 @@
-body {
-  margin: 0; }
-
 header {
-  background-image: url("../img/m-h-day.jpg");
+  background-color: #000000;
+  background-image: url(../img/m-h-night.jpg);
+  background-size: cover;
   height: 850px;
   border-bottom-right-radius: 400px; }
-
-.header-wrap {
-  display: flex;
-  flex-direction: column; }
+  header .header-wrap {
+    padding: 0 0 0 190px;
+    width: 700px; }
+  header .landing-logo {
+    display: flex;
+    align-items: center; }
+    header .landing-logo img {
+      width: 50px;
+      height: 50px; }
+    header .landing-logo p {
+      display: block;
+      font-size: 20pt;
+      padding-left: 20px; }
+    header .landing-logo span {
+      display: block;
+      text-align: center;
+      font-size: 15px; }
+  header .header_heading {
+    font-size: 60pt;
+    font-weight: bold; }
+  header .header_heading::before {
+    font-size: 60pt;
+    font-weight: bold;
+    position: absolute;
+    content: 'awesome';
+    background: blue;
+    z-index: 2; }
+  header .header_text {
+    font-size: 13pt;
+    white-space: pre-line;
+    font-family: 'Source Sans Pro', sans-serif; }
+  header .header_button {
+    border: none;
+    color: white;
+    height: 40px;
+    width: 140px;
+    background-color: green;
+    font-weight: bold;
+    border-radius: 5px; }
+  header .login {
+    padding-left: 150px;
+    color: white; }
 
 .section_text {
   text-align: center;

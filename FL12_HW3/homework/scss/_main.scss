@@ -1,18 +1,74 @@
 // Write your styles here
-body {
-  margin: 0;
-}
-
 header {
-  background-image: url("../img/m-h-day.jpg");
+  background-color: $Body_color;
+  background-image: $Header_img;
+  background-size: $header_bg_Size;
   height: 850px;
   border-bottom-right-radius: 400px;
+
+  .header-wrap {
+    padding: $Header_wrap_padding;
+    width: 700px;
+  }
+
+  .landing-logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    p {
+      display: block;
+      font-size: 20pt;
+      padding-left: 20px;
+    }
+
+    span {
+      display: block;
+      text-align: center;
+      font-size: 15px;
+    }
+  }
+
+  .header_heading {
+    font-size: 60pt;
+    font-weight: bold;
+  }
+
+  .header_heading::before {
+    font-size: 60pt;
+    font-weight: bold;
+    position: absolute;
+    content: 'awesome';
+    background: blue;
+    z-index: 2;
+  }
+
+  .header_text {
+    font-size: 13pt;
+    white-space: pre-line;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  .header_button {
+    border: none;
+    color: white;
+    height: 40px;
+    width: 140px;
+    background-color: green;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .login {
+    padding-left: 150px;
+    color: white;
+  }
 }
 
-.header-wrap {
-  display: flex;
-  flex-direction: column;
-}
 
 .section_text {
   text-align: center;
