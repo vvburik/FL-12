@@ -1,15 +1,15 @@
 // Write your styles here
 body{
   margin: $Marg;
+  background-color: $Body_color;
 }
 
-
 header {
-  background-color: $Body_color;
   background-image: $Header_img;
   background-size: $header_bg_Size;
   height: 850px;
   border-bottom-right-radius: 400px;
+  color: $Header_font_color;
 
   .header-wrap {
     padding: $Header_wrap_padding;
@@ -37,19 +37,21 @@ header {
       font-size: 15px;
     }
   }
-//todo
-  .header_heading {
-    font-size: 60pt;
+
+  p.header_heading {
+    font-size: 50pt;
     font-weight: bold;
+    width: 450px;
   }
-//todo
-  .header_heading::before {
-    font-size: 60pt;
+
+  p.header_heading::before {
+    font-size: 50pt;
     font-weight: bold;
     position: absolute;
     content: 'awesome';
-    background: blue;
-    z-index: 2;
+    background: $Heading_sometext_color;
+    z-index: 1;
+    top: 242px;
   }
 
   .header_text {
@@ -59,13 +61,15 @@ header {
   }
 
   .header_button {
-    border: none;
+    border: 1px;
     color: white;
-    height: 40px;
-    width: 140px;
-    background-color: green;
+    height: 50px;
+    width: 150px;
+    background-color: $ButtonBg;
+    border-radius: 8px;
+    font-family: "Hind", sans-serif;
+    font-size: 14pt;
     font-weight: bold;
-    border-radius: 5px;
   }
 
   .login {
@@ -74,7 +78,8 @@ header {
   }
 }
 
-  .section {
+.section {
+  color: $Header_font_color;
 
     p.section_text {
       display: block;
@@ -83,28 +88,18 @@ header {
       font-family: "Hind", sans-serif;
       font-size: 25pt;
       width: max-content;
-      background: lightblue;
       position: relative;
-      z-index: -1;
-    }
-
-    p.section_text::before {
-      position: absolute;
-      content: 'Welcome to\a0';
-      background: white;
       z-index: 1;
-
     }
 
     p.section_text::after {
       position: absolute;
-      content: '!';
-      background: white;
-      z-index: 1;
-      right: 0;
+      content: 'adventure';
+      background: $Heading_sometext_color;
+      z-index: 2;
+      right: 10px;
     }
-  }
-
+}
 
   .section {
     width: 1000px;
@@ -162,7 +157,6 @@ header {
     left: -25px;
     top: 100px;
 
-
     .section_banner_text_wrap {
       text-align: justify;
       padding: 0 0 0 150px;
@@ -171,7 +165,6 @@ header {
         color: $Banner_text_color;
         font-size: 30px;
         font-weight: bold;
-
       }
 
       p.section_banner_heading::after {
@@ -184,9 +177,8 @@ header {
       .section_banner_text {
         color: #a9a9a9;
       }
-
-
     }
+
     .section_banner_button {
       width: 150px;
       height: 50px;
@@ -200,7 +192,6 @@ header {
       font-weight: bold;
       font-family: "Hind", sans-serif;
       border-radius: 8px;
-
     }
   }
 
@@ -243,7 +234,6 @@ header {
     display: block;
     width: 350px;
     font-size: 12pt;
-
   }
 
   .footer-cr {
