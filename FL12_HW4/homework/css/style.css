@@ -11,6 +11,13 @@ header {
     justify-content: center;
 }
 
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .home {
     font-size: 22px;
     color: #777777;
@@ -20,8 +27,6 @@ header {
 .navbar {
     list-style: none;
     margin: 0;
-    padding-left: 400px;
-    float: right;
 }
 
 .navbar li {
@@ -47,13 +52,11 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    }
+}
 
 .picture {
     overflow: hidden;
     height: 700px;
-
-
 }
 
 .dark {
@@ -105,12 +108,12 @@ header {
     margin-bottom: 25px;
 }
 
-.autor_pic{
-  margin-top: 80px;
-  width: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.autor_pic {
+    margin-top: 80px;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .text_main {
@@ -119,12 +122,12 @@ header {
     font-weight: bold;
 }
 
-.alt{
+.alt {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    }
+}
 
 .autor_info {
     display: flex;
@@ -156,10 +159,11 @@ header {
 }
 
 .button {
-        display: flex;
+    display: flex;
     flex-direction: row;
     width: 800px;
 }
+
 .autor_button {
     width: 150px;
     height: 40px;
@@ -169,5 +173,40 @@ header {
     font-family: 'Arimo', sans-serif;
     color: #777777;
     background: none;
+}
 
+hr {
+    width: 800px;
+    margin-top: 50px;
+    border: 1px solid #777777;
+    opacity: 0.3;
+}
+
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #000000;
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p {
+    color: #777777;
+    width: 400px;
+}
+
+
+.left_footer h1 {
+    color: #ffffff;
+}
+
+.right_footer h1 {
+    color: #ffffff;
 }
