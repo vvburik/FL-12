@@ -109,7 +109,7 @@ header {
 }
 
 .autor_pic {
-    margin-top: 80px;
+    margin-top: 50px;
     width: 50%;
     display: block;
     margin-left: auto;
@@ -177,7 +177,7 @@ header {
 
 hr {
     width: 800px;
-    margin-top: 50px;
+    margin-top: 80px;
     border: 1px solid #777777;
     opacity: 0.3;
 }
