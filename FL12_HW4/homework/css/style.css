@@ -55,8 +55,10 @@ header {
 }
 
 .picture {
-    overflow: hidden;
     height: 700px;
+    background: url(../img/home-bg.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 
 .dark {
