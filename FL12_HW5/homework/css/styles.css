@@ -3,82 +3,121 @@
  * Feel free to add new colors if you need it
  */
 :root {
-  --bg-color--dark: #0b192f;
-  --bg-color--header: #024161;
-  --link: #fff;
-  --link--hover: #1f52a4;
-  --bg-footer-color: #024161;
+    --bg-color--dark: #0b192f;
+    --bg-color--header: #024161;
+    --link: #fff;
+    --link--hover: #1f52a4;
+    --bg-footer-color: #024161;
 }
 
 body {
-  font-family: roboto;
+    font-family: Roboto, sans-serif;
 }
+
 .post-1 {
-	background: #9d27b0;
+    background: #9d27b0;
 }
+
 .post-2 {
-	background: #9bb800;
+    background: #9bb800;
 }
+
 .post-3 {
-	background: #ed5120;
+    background: #ed5120;
 }
+
 .post-4 {
-	background: #9d27b0;
+    background: #9d27b0;
 }
+
 .post-5 {
-	background: #2d95bb;
+    background: #2d95bb;
 }
 
 /* Your styles go here */
 
-body {
-    background-color: var(--bg-color--dark) ;
+
+@media screen and (max-width: 2000px) {
+    body {
+    background-color: var(--bg-color--dark);
+        width: 1400px;
+        height: 100%;
+        margin: auto;
 }
 
-@media screen and (max-width: 1900px) {
+    header {
+
+        padding-bottom: 30px;
+        margin-top: 0px;
+    }
+
     .navigation {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        background-color: var(--bg-color--header);
+        justify-content: space-around;
+        background: #024161;
     }
 
     .navbar {
-        list-style: none;
-
-        padding-right: 60px;
-
+        display: flex;
+        align-items: stretch;
 
     }
 
-    .navbar li {
-        display: inline-block;
-        padding: 30px 0 30px 0;
+    .link {
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
-    .navbar a {
+    nav a {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding-right: 15px;
         text-decoration: none;
-        display: block;
-        position: relative;
-        padding: 30px;
-        font-size: 15px;
-        letter-spacing: 2px;
-        color: var(--link);
+        color: #fff;
     }
 
+    nav a:hover {
 
-    .navbar li:hover {
-        background-color: var(--link--hover);
+        background: #1f52a4;
+        background-size: 200px;
     }
 
-.navigation h1 {
-    padding-left: 60px;
-        color: var(--link);
-      font-family: Roboto, sans-serif;
-}
-.blog {
-    color: #9d27b0;
-}
+    .navigation h1 {
+        padding-left: 60px;
+        color: #fff;
+        font-family: Roboto, sans-serif;
+    }
+
+    .blog {
+        color: #9d27b0;
+    }
+
+    .top-img {
+        display: flex;
+        background-image: url(../img/post0.jpg);
+        background-repeat: no-repeat;
+        height: 45vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .top-img-text {
+        padding-left: 30px;
+        padding-bottom: 30px;
+        align-self: flex-end;
+        width: 65%;
+    }
+
+    .top-img h1 {
+        font-size: 40px;
+        color: #ffffff;
+    }
+
+    .top-img p {
+        color: #ffffff;
+    }
+
 }
 
