@@ -39,11 +39,11 @@ body {
 
 @media screen and (max-width: 2000px) {
     body {
-    background-color: var(--bg-color--dark);
+        background-color: var(--bg-color--dark);
         width: 1400px;
         height: 100%;
         margin: auto;
-}
+    }
 
     header {
 
@@ -119,5 +119,111 @@ body {
         color: #ffffff;
     }
 
+
+    .flex {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    / / max-width: 700 px; /* макс ширина блока */
+    / / margin: 0 auto; /* выравниваем блок по центру */
+    / / font-size: 400 %;
+    }
+
+    .mainitem, .item {
+        flex-grow: 1; /* растягивание элементов */
+        flex-wrap: wrap;
+
+    / / background: #b5ced8;
+        display: flex;
+        justify-content: center;
+        align-items: center; /* цифры по центру */
+    }
+
+
+    .mainitem, img {
+        justify-content: flex-start;
+        width: 500px;
+        height: 400px;
+        flex-direction: row;
+
+
+    }
+
+    .mainitem {
+        min-height: 300px; /* высота основного блока */
+        margin: 0;
+    }
+
+    .sideitem {
+        /* flex:0 0 150px; */
+        flex-basis: 380px; /* ширина 150 */
+        flex-shrink: 0; /* Убираем уменьшение = 150 */
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .sideitem img {
+        width: 380px;
+        height: 220px;
+    }
+
+    .color {
+        background: #ffffff;
+    }
+
+    .item {
+        align-self: center;
+        flex-basis: 50%;
+        min-height: 150px;
+        margin-left: 10px;
+        margin-top: 0;
+    }
+
+    .sideitem p, h1 {
+        width: 310px;
+        margin: 0 auto;
+        align-self: center;
+        padding-top: 30px;
+
+    }
+
+    .sideitem p {
+        line-height: 1.5;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+//.item:first-child {
+      margin-bottom: 10px;
+  }
+
+    .img-text {
+        //background: #9d27b0;
+        align-self: center;
+    / / text-align: center;
+        width: 510px;
+        height: 400px;
+
+    }
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    	color: grey;
+	font-size: 12px;
+  height: 100px;
+  background: #024161;
+
+    margin-top: 850px;
 }
+.footer div{
+	padding: 10px 20px;
+}
+}
+
 
