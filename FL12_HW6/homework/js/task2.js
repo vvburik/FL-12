@@ -18,8 +18,8 @@ if (a === 0 || b === 0 || c === 0) {
     alert('Triangle doesn’t exist');
 } else if (a === b && b === c && c === a) {
     alert('Triangle is equivalent');
-} else if (b === c && c === b && a !== b && a !== c || a === c && c === a && b !== a && b !== c || a === b && b === a && c !== a && c !== b) {
-    alert('Triangle is isosceles ');
+} else if (b === c && c === b && a !== c || a === c && c === a && b !== c || a === b && b === a && c !== b) {
+    alert('Triangle is isosceles');
 } else {
     alert('Triangle is scalene');
 }
