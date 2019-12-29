@@ -4,39 +4,29 @@ let user1 = 'admin@gmail.com';
 let user2 = 'user@gmail.com';
 let pass1 = 'AdminPass';
 let pass2 = 'UserPass';
-let newpass1 = prompt('Enter new password');
-let newpass2 = prompt('Enter new password');;
 
-function confirmation() {
-    if (confirm('Do you want to change your password?')) {
-        return prompt('Enter your old password');
-    } else {
-        alert('You have failed the change.');
-    }
-}
-
-if ( email === '') {
+if (email === '') {
     alert('Canceled');
-}
-
-else if ( email.length < 5 ) {
+} else if (email.length < 5) {
     alert('I don\'t know any emails having name length less than 5 symbols');
-}
-
-else if ((email !== user1) && (email !== user2)) {
+} else if ((email !== user1) && (email !== user2)) {
     alert('I don’t know you');
-}
-
-else if ((email === user1) && (email === user2)) {
+} else if ((email === user1) && (email === user2)) {
     alert(password)
-}
-
-else if ( (password === '') || !(password)) {
+} else if ((password === '') || !(password)) {
     alert('Canceled');
-}
-else if ( !((password === pass1) && (email === user1)) && !((password === pass2) && (email === user2)) ) {
+} else if (!((password === pass1) && (email === user1)) && !((password === pass2) && (email === user2))) {
     alert('Wrong password');
+} else if (!(confirm('Do you want to change your password?'))) {
+    alert('You have failed the change.');
+} else if (!(oldpass = prompt('Enter old password'))) {
+    alert('Canceled');
+} else if (((oldpass === pass1) || (oldpass === pass2)) && !(newpass = prompt('Enter new password'))) {
+    alert('Canceled')
+} else if (newpass.length < 6) {
+    alert('It’s too short password. Sorry.');
+} else if ((prompt('Enter password for confirm')) !== (newpass)) {
+    alert('You wrote the wrong password.')
+} else {
+    alert('You have successfully changed your password.')
 }
-
-
-
