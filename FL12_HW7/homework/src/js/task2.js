@@ -3,7 +3,9 @@ let chance;
 let prize;
 let currentprize;
 let number = 9;
-let text = 'Choose a roulette pocket number from 0 to ' + range + '\n Attempts left: ' + chance + '\n Total prize: ' + prize + '\n Possible prize on current attempt:' + currentprize + '\n';
+let text = 'Choose a roulette pocket number from 0 to ' + range +
+            '\n Attempts left: ' + chance + '\n Total prize: ' + prize +
+            '\n Possible prize on current attempt:' + currentprize + '\n';
 let exit;
 
 if (!confirm('Do you want to play a game?')){
@@ -13,8 +15,8 @@ if (!confirm('Do you want to play a game?')){
 
 else {
     do {
-        number = Math.floor(Math.random() * 9);
-        text = prompt('enter a number of pocket')
+        number = Math.floor(Math.random() *number);
+       text = prompt('enter a number of pocket')
 
         
     }
