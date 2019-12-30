@@ -10,10 +10,7 @@ let exit;
 
 if (!confirm('Do you want to play a game?')){
     alert('You did not become a billionaire, but can.');
-}
-
-
-else {
+} else {
     do {
         number = Math.floor(Math.random() *number);
        text = prompt('enter a number of pocket')
