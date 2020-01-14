@@ -8,12 +8,17 @@ let filter = [2, 5, 8];
 let text = 'hey world';
 let datalist = [2, 7];
 
+const actors = [
+    { name: 'tommy', age: 36 },
+    { name: 'lee', age: 28 }
+  ];
+  
 function convert() {
     let arr = [Number(one), String(two), String(three), Number(four)];
     return arr;
 }
 
-function multiply(data, value) {
+function executeforEach(data, value) {
     let multiply = [];
     data.forEach(function (item) {
         multiply.push(item * value)
@@ -21,7 +26,7 @@ function multiply(data, value) {
     return multiply;
 }
 
-function minus(data, value) {
+function mapArray(data, value) {
     let minus = [];
     data.forEach(function (item) {
         minus.push(Number(item) + value)
@@ -29,7 +34,7 @@ function minus(data, value) {
     return minus;
 }
 
-function filtered(data, value) {
+function filterArray(data, value) {
     let multiply = [];
 
     data.forEach(function (item) {
@@ -46,19 +51,14 @@ function flipOver(data) {
 
 }
 
-function revers(data) {
-    return data.split('').reverse().join('');
-
-}
-
 function makeListFromRange ([start, end]) {
     return Array(end - start + Number(one)).fill().map((_, i) => start + i);
   }
 
 
 console.log(convert(one, two, three, four));
-console.log(multiply(multi, 3));
-console.log(minus(min, 3));
-console.log(filtered(filter, 2));
+console.log(executeforEach(multi, 3));
+console.log(mapArray(min, 3));
+console.log(filterArray(filter, 2));
 console.log(flipOver(text));
 console.log(makeListFromRange(datalist));
