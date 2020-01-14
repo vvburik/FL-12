@@ -7,6 +7,8 @@ let min = [2, '5', 8];
 let filter = [2, 5, 8];
 let text = 'hey world';
 let datalist = [2, 7];
+let subs = [58, 14, 48, 2, 31, 29];
+let number = 30;
 
 const actors = [
     { name: 'tommy', age: 36 },
@@ -64,6 +66,22 @@ function makeListFromRange ([start, end]) {
     return newactor;
 }
 
+function substitute (data) {
+    let ar = [];
+
+    data.forEach(function (item) {
+        if (item < number) {
+            ar.push("*");
+
+        }
+        if (item > number) {
+            ar.push(item);
+        }
+    });
+
+    return ar;
+}
+
 console.log(convert(one, two, three, four));
 console.log(executeforEach(multi, 3));
 console.log(mapArray(min, 3));
@@ -71,3 +89,4 @@ console.log(filterArray(filter, 2));
 console.log(flipOver(text));
 console.log(makeListFromRange(datalist));
 console.log(getArrayOfKeys(actors));
+console.log(substitute(subs));
