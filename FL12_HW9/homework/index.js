@@ -16,6 +16,7 @@ const actors = [
   ];
   
 const date = new Date(2019, 0, 2);
+let seconddate = new Date('6/15/2018 09:15:00');
 
 function convert() {
     let arr = [Number(one), String(two), String(three), Number(four)];
@@ -72,7 +73,7 @@ function substitute(data) {
     let ar = [];
     data.forEach(function (item) {
         if (item < number) {
-            ar.push("*");
+            ar.push('*');
         }
         if (item > number) {
             ar.push(item);
@@ -88,6 +89,19 @@ function getPastDay(data, month) {
     return dat.getDate();
 }
 
+function formatDate (data) {
+    if (data == null){
+        let curdate = new Date();
+        let date = curdate.getFullYear() + '/' + (curdate.getMonth() + 1) + '/' + curdate.getDate()
+        return date + ' ' + curdate.getHours() + ':' + curdate.getMinutes(); 
+    }
+
+    else {
+       let inputdate = data;
+       let day = inputdate.getFullYear() + '/' + (inputdate.getMonth() + 1) + '/' + inputdate.getDate();
+       return day + ' ' + data.getHours() + ':' + data.getMinutes(); 
+    };
+}
 
 console.log(convert(one, two, three, four));
 console.log(executeforEach(multi, 3));
@@ -98,3 +112,4 @@ console.log(makeListFromRange(datalist));
 console.log(getArrayOfKeys(actors));
 console.log(substitute(subs));
 console.log(getPastDay(date, 365));
+console.log(formatDate(seconddate));
