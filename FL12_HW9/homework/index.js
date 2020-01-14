@@ -56,9 +56,18 @@ function makeListFromRange ([start, end]) {
   }
 
 
+  function getArrayOfKeys(data) {
+    let newactor = [];
+    data.forEach(function (item) {
+        newactor.push(item.name)
+    });
+    return newactor;
+}
+
 console.log(convert(one, two, three, four));
 console.log(executeforEach(multi, 3));
 console.log(mapArray(min, 3));
 console.log(filterArray(filter, 2));
 console.log(flipOver(text));
 console.log(makeListFromRange(datalist));
+console.log(getArrayOfKeys(actors));
