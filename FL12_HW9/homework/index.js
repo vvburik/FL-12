@@ -15,6 +15,8 @@ const actors = [
     { name: 'lee', age: 28 }
   ];
   
+const date = new Date(2019, 0, 2);
+
 function convert() {
     let arr = [Number(one), String(two), String(three), Number(four)];
     return arr;
@@ -66,21 +68,26 @@ function makeListFromRange ([start, end]) {
     return newactor;
 }
 
-function substitute (data) {
+function substitute(data) {
     let ar = [];
-
     data.forEach(function (item) {
         if (item < number) {
             ar.push("*");
-
         }
         if (item > number) {
             ar.push(item);
         }
     });
-
     return ar;
 }
+
+function getPastDay(data, month) {
+    let dat = new Date(data);
+    dat.setDate(dat.getDate() - month);
+
+    return dat.getDate();
+}
+
 
 console.log(convert(one, two, three, four));
 console.log(executeforEach(multi, 3));
@@ -90,3 +97,4 @@ console.log(flipOver(text));
 console.log(makeListFromRange(datalist));
 console.log(getArrayOfKeys(actors));
 console.log(substitute(subs));
+console.log(getPastDay(date, 365));
